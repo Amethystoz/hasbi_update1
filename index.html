@@ -3,100 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV HASBI - Doraemon Space</title>
+    <title>CV Hasbi - Doraemon Theme</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="sky">
-        <div class="cloud c1"></div>
-        <div class="cloud c2"></div>
-        <div class="cloud c3"></div>
-    </div>
-
     <div class="container">
-        <div class="doraemon-float">
-            <div class="bamboo-copter"></div>
-            <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png" alt="Doraemon">
-        </div>
-
-        <header class="main-card">
-            <div class="header-content">
-                <h1 class="name-title">HASBI AL MUSYAFA</h1>
-                <p class="tagline">Lulusan SMA | Public Speaker | Leader</p>
-                
-                <button class="magic-bell" onclick="openMagicDoor()">
-                    <div class="bell-icon">🔔</div>
-                    <span>Ketuk Pintu Ajaib!</span>
-                </button>
-            </div>
-
-            <div id="magic-door" class="door-content">
-                <div class="door-inner">
-                    <div class="photo-box">
-                        <img src="https://via.placeholder.com/150/0096ff/ffffff?text=HASBI" alt="Foto Hasbi">
-                    </div>
-                    <div class="bio-text">
-                        <h3>Tentang Diri</h3>
-                        <p>Saya lulusan SMA yang aktif, ramah, dan bertanggung jawab. Memiliki pengalaman berjualan sehingga terbiasa melayani pelanggan, berkomunikasi dengan baik, serta bekerja dengan disiplin. Saya suka belajar hal baru dan kreatif.</p>
-                    </div>
-                </div>
-            </div>
+        <header>
+            <div class="bell-icon">🔔</div>
+            <h1>HASBI AL MUSYAFA</h1>
+            <p class="tagline">Lulusan SMA yang Kreatif & Disiplin</p>
         </header>
 
-        <div class="grid-container">
-            <aside class="info-sidebar">
-                <div class="card item-hover">
-                    <h3>📍 Informasi</h3>
-                    <p><strong>Lahir:</strong> 11 Nov 2007</p>
-                    <p><strong>WA:</strong> 082130202078</p>
-                    <p><strong>Hobi:</strong> Badminton 🏸</p>
-                    <p><strong>IG:</strong> @benitoite</p>
-                </div>
-                <div class="card item-hover">
-                    <h3>🗣️ Bahasa</h3>
-                    <div class="lang-bar"><span>Indonesia</span> <div class="fill full"></div></div>
-                    <div class="lang-bar"><span>English</span> <div class="fill basic"></div></div>
-                </div>
-            </aside>
+        <div class="photo-section">
+            <button id="magicBtn">Buka Kantong Ajaib (Lihat Foto)</button>
+            <div id="photoWrapper" class="hidden">
+                <img src="WhatsApp Image 2026-02-06 at 7.47.12 PM.jpeg" alt="Foto Hasbi" class="profile-img">
+                <p>✨ Tadaaa! ✨</p>
+            </div>
+        </div>
 
-            <main class="info-main">
-                <div class="card">
-                    <h3>🎓 Pendidikan</h3>
-                    <ul class="dora-list">
-                        <li><strong>SMA KP Baleendah</strong> (Lulus 2026)</li>
-                        <li><strong>SMP KP Baleendah</strong> (Lulus 2023)</li>
-                        <li><strong>SDN Riunggunung</strong> (Lulus 2020)</li>
-                    </ul>
-                </div>
+        <main>
+            <section class="card">
+                <h3>🔵 Tentang Diri</h3>
+                <p>Saya lulusan SMA yang aktif, ramah, dan bertanggung jawab. Memiliki pengalaman berjualan kecil-kecilan sehingga terbiasa melayani pelanggan, berkomunikasi dengan baik, serta bekerja dengan disiplin. Saya suka belajar hal baru dan kreatif.</p>
+            </section>
 
-                <div class="card">
-                    <h3>💡 Keahlian</h3>
-                    <div class="skill-group">
-                        <span class="skill-tag">Public Speaking</span>
-                        <span class="skill-tag">Memimpin Kelompok</span>
+            <section class="card">
+                <h3>🔴 Detail Kontak</h3>
+                <ul>
+                    <li><strong>Lahir:</strong> 11 November 2007</li>
+                    <li><strong>Telepon:</strong> 082130202078</li>
+                    <li><strong>Hobby:</strong> 🏸 Badminton</li>
+                    <li><strong>Alamat:</strong> Kp. Manggahang 1</li>
+                    <li><strong>IG:</strong> @benitoite</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h3>🟡 Pendidikan</h3>
+                <div class="timeline">
+                    <div class="item">
+                        <p><strong>SMA KARYA PEMBANGUNAN BALEENDAH</strong></p>
+                        <span>Lulus Tahun 2026</span>
+                    </div>
+                    <div class="item">
+                        <p><strong>SMP KARYA PEMBANGUNAN BALEENDAH</strong></p>
+                        <span>Lulus Tahun 2023</span>
+                    </div>
+                    <div class="item">
+                        <p><strong>SDN RIUNGGUNUNG</strong></p>
+                        <span>Lulus Tahun 2020</span>
                     </div>
                 </div>
+            </section>
 
-                <div class="card">
-                    <h3>🏅 Organisasi</h3>
-                    <p><strong>Pramuka (SD & SMP):</strong> Aktif berorganisasi dan melatih kedisiplinan sejak dini.</p>
-                </div>
-            </main>
-        </div>
+            <div class="grid-2">
+                <section class="card">
+                    <h3>🔵 Keahlian</h3>
+                    <ul>
+                        <li>Public Speaking</li>
+                        <li>Memimpin Kelompok</li>
+                        <li>Bahasa Indonesia (Native)</li>
+                        <li>English (Basic)</li>
+                    </ul>
+                </section>
+                <section class="card">
+                    <h3>🔴 Organisasi</h3>
+                    <ul>
+                        <li><strong>SD:</strong> Pramuka</li>
+                        <li><strong>SMP:</strong> Pramuka</li>
+                        <li><strong>SMA:</strong> Fokus Studi</li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Dibuat dengan semangat Baling-Baling Bambu 🎋</p>
+        </footer>
     </div>
 
     <script>
-        function openMagicDoor() {
-            const door = document.getElementById('magic-door');
-            door.classList.toggle('active');
-            
-            // Efek suara ketukan jika ingin ditambah sendiri
-            if(door.classList.contains('active')) {
-                console.log("Pintu Terbuka!");
-            }
-        }
+        const btn = document.getElementById('magicBtn');
+        const photo = document.getElementById('photoWrapper');
+
+        btn.addEventListener('click', () => {
+            photo.classList.toggle('show');
+            btn.innerText = photo.classList.contains('show') ? 'Tutup Kantong' : 'Buka Kantong Ajaib (Lihat Foto)';
+        });
     </script>
 </body>
 </html>

@@ -1,108 +1,136 @@
 :root {
-    --dora-blue: #0096ff;
-    --dora-red: #ff3333;
-    --dora-yellow: #ffcc00;
-    --bg-light: #e0f4ff;
+    --dora-blue: #00A0E9;
+    --dora-red: #EE1C24;
+    --dora-yellow: #FFEF00;
+    --dora-white: #FFFFFF;
 }
 
-* { box-sizing: border-box; }
 body {
-    margin: 0;
+    background-color: #e0f4ff;
     font-family: 'Quicksand', sans-serif;
-    background-color: var(--bg-light);
-    overflow-x: hidden;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
 .container {
-    max-width: 900px;
-    margin: 50px auto;
+    max-width: 700px;
+    background: var(--dora-white);
+    border-radius: 30px;
+    border: 8px solid var(--dora-blue);
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+    background-color: var(--dora-blue);
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    border-bottom: 5px solid var(--dora-red);
+}
+
+header h1 {
+    font-family: 'Fredoka One', cursive;
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+.bell-icon {
+    font-size: 40px;
+    background: var(--dora-yellow);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+/* Photo Section & Animation */
+.photo-section {
+    text-align: center;
     padding: 20px;
-    position: relative;
 }
 
-/* --- ANIMASI AWAN --- */
-.sky { position: fixed; width: 100%; height: 100%; z-index: -1; }
-.cloud {
-    background: white; width: 150px; height: 50px; border-radius: 50px;
-    position: absolute; opacity: 0.7; animation: move 15s linear infinite;
-}
-.c1 { top: 10%; left: -150px; }
-.c2 { top: 40%; left: -200px; animation-duration: 25s; }
-.c3 { top: 70%; left: -100px; animation-duration: 20s; }
-@keyframes move { to { left: 100%; } }
-
-/* --- DORAEMON FLOAT --- */
-.doraemon-float {
-    position: absolute; top: -60px; right: 20px; width: 120px;
-    animation: float 3s ease-in-out infinite; z-index: 5;
-}
-.doraemon-float img { width: 100%; }
-.bamboo-copter {
-    width: 60px; height: 5px; background: #555; margin: 0 auto;
-    border-radius: 10px; animation: spin 0.2s linear infinite;
-}
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
-@keyframes spin { 100% { transform: rotateY(360deg); } }
-
-/* --- CARD STYLE --- */
-.main-card {
-    background: white; border-radius: 30px; border: 5px solid var(--dora-blue);
-    padding: 40px; text-align: center; box-shadow: 10px 10px 0px rgba(0, 150, 255, 0.2);
-    margin-bottom: 30px; position: relative;
+#magicBtn {
+    background: var(--dora-red);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    font-family: 'Quicksand', sans-serif;
 }
 
-.name-title {
-    font-family: 'Fredoka', sans-serif; color: var(--dora-blue);
-    font-size: 2.8rem; margin: 0; text-shadow: 2px 2px var(--dora-yellow);
+#magicBtn:hover {
+    transform: scale(1.1) rotate(-2deg);
+    background: #c7151a;
 }
 
-/* --- TOMBOL MAGIC --- */
-.magic-bell {
-    background: var(--dora-red); color: white; border: 4px solid #000;
-    padding: 12px 25px; border-radius: 50px; font-weight: bold;
-    cursor: pointer; margin-top: 20px; transition: 0.3s;
-    display: inline-flex; align-items: center; gap: 10px;
+#magicBtn:active {
+    transform: scale(0.9);
 }
-.magic-bell:hover { transform: scale(1.1) rotate(2deg); background: #cc0000; }
 
-/* --- ANIMASI PINTU AJAIB --- */
-.door-content {
-    max-height: 0; opacity: 0; overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
 }
-.door-content.active { max-height: 500px; opacity: 1; margin-top: 30px; }
 
-.door-inner {
-    background: #fff0f5; border: 4px solid var(--dora-red);
-    border-radius: 20px; padding: 20px; display: flex; gap: 20px; align-items: center;
+.show {
+    max-height: 300px;
+    opacity: 1;
+    margin-top: 20px;
 }
-.photo-box {
-    width: 120px; height: 120px; border-radius: 15px; overflow: hidden;
-    border: 3px solid var(--dora-blue); flex-shrink: 0;
-}
-.photo-box img { width: 100%; height: 100%; object-fit: cover; }
 
-/* --- GRID SYSTEM --- */
-.grid-container { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; }
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--dora-blue);
+    object-fit: cover;
+}
+
+/* Cards */
 .card {
-    background: white; padding: 25px; border-radius: 20px;
-    margin-bottom: 20px; border-bottom: 6px solid var(--dora-yellow);
-}
-h3 { color: var(--dora-blue); margin-top: 0; border-bottom: 2px dashed #ddd; }
-
-.skill-tag {
-    background: var(--dora-blue); color: white; padding: 5px 15px;
-    border-radius: 50px; display: inline-block; margin: 5px; font-size: 0.9rem;
+    padding: 15px 25px;
+    margin: 15px;
+    border-radius: 15px;
+    background: #f9f9f9;
+    border-left: 8px solid var(--dora-blue);
 }
 
-.lang-bar { margin-bottom: 10px; }
-.fill { background: #eee; height: 10px; border-radius: 10px; margin-top: 5px; position: relative; }
-.fill::after { content: ''; position: absolute; left: 0; height: 100%; border-radius: 10px; background: var(--dora-blue); }
-.fill.full::after { width: 100%; }
-.fill.basic::after { width: 40%; }
+h3 {
+    margin-top: 0;
+    color: var(--dora-blue);
+}
 
-/* Responsif */
-@media (max-width: 768px) {
-    .grid-container { grid-template-columns: 1fr; }
-    .door-inner { flex-direction: column; text-align: center; }
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.timeline .item {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ccc;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 15px;
+    background: #eee;
+    color: #777;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .grid-2 { grid-template-columns: 1fr; }
 }
