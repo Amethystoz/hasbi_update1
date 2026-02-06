@@ -3,93 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Hasbi Al Musyafa - Doraemon Theme</title>
+    <title>CV HASBI - Doraemon Edition</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="clouds">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    </div>
 
     <div class="container">
-        <header class="profile-card">
-            <div class="doraemon-head"></div>
-            <h1 class="name">HASBI AL MUSYAFA</h1>
-            <p class="tagline">Siap Beraksi dengan Kantong Ajaib Skill</p>
-            
-            <button id="magic-door-btn" onclick="revealProfile()">Buka Pintu Rahasia Hasbi ✨</button>
-            
-            <div id="secret-content" class="hidden-section">
-                <div class="photo-frame">
-                    <img src="WhatsApp Image 2026-02-06 at 7.47.12 PM.jpeg" alt="Foto Hasbi">
+        <header class="hero-card">
+            <div class="dora-icon">
+                <div class="propeller"></div> </div>
+            <h1 class="main-name">HASBI AL MUSYAFA</h1>
+            <p class="status">🚀 Ready for New Adventures!</p>
+
+            <button class="door-btn" onclick="toggleMagic()">
+                <span class="btn-text">Buka Pintu Ajaib ✨</span>
+            </button>
+
+            <div id="magic-reveal" class="reveal-content">
+                <div class="profile-frame">
+                    <img src="WhatsApp Image 2026-02-06 at 7.47.12 PM.jpeg" alt="Hasbi">
                 </div>
-                <div class="about-text">
-                    <h3>Tentang Diri</h3>
-                    <p>Saya lulusan SMA yang aktif, ramah, dan bertanggung jawab. Memiliki pengalaman berjualan kecil-kecilan sehingga terbiasa melayani pelanggan, berkomunikasi dengan baik, serta bekerja dengan disiplin. Saya suka belajar hal baru, kreatif.</p>
+                <div class="speech-bubble">
+                    <h3>Halo! Saya Hasbi</h3>
+                    <p>Lulusan SMA yang aktif, ramah, dan bertanggung jawab. Terbiasa melayani pelanggan dengan disiplin dan kreatif. Saya suka belajar hal baru!</p>
                 </div>
             </div>
         </header>
 
-        <div class="grid-layout">
-            <aside class="sidebar">
-                <section class="box">
-                    <h3>🗓️ Biodata</h3>
-                    <p><strong>Lahir:</strong> 11 Nov 2007</p>
-                    <p><strong>Telepon:</strong> 082130202078</p>
-                    <p><strong>Alamat:</strong> Kp. Manggahang 1</p>
-                    <p><strong>Hobi:</strong> Badminton 🏸</p>
-                </section>
-
-                <section class="box">
-                    <h3>🌐 Sosial Media</h3>
-                    <p><strong>IG:</strong> @benitoite</p>
-                </section>
-
-                <section class="box">
-                    <h3>🗣️ Bahasa</h3>
-                    <p>Indonesia (Lancar)</p>
-                    <p>Inggris (Basic)</p>
-                </section>
-            </aside>
-
-            <main class="main-info">
-                <section class="box">
-                    <h3>🎓 Pendidikan</h3>
-                    <ul class="dora-list">
-                        <li><strong>SDN Riunggunung</strong> <br> <small>Lulus Tahun 2020</small></li>
-                        <li><strong>SMP Karya Pembangunan Baleendah</strong> <br> <small>Lulus Tahun 2023</small></li>
-                        <li><strong>SMA Karya Pembangunan Baleendah</strong> <br> <small>Lulus Tahun 2026</small></li>
+        <div class="info-grid">
+            <div class="side-col">
+                <div class="glass-card">
+                    <h3>📋 Biodata</h3>
+                    <ul>
+                        <li><strong>Lahir:</strong> 11 Nov 2007</li>
+                        <li><strong>Hobi:</strong> Badminton 🏸</li>
+                        <li><strong>Lokasi:</strong> Manggahang 1</li>
                     </ul>
-                </section>
+                </div>
+                <div class="glass-card">
+                    <h3>📱 Kontak</h3>
+                    <p>📞 082130202078</p>
+                    <p>📸 @benitoite</p>
+                </div>
+            </div>
 
-                <section class="box">
-                    <h3>🧠 Keahlian</h3>
-                    <div class="tags">
-                        <span>Public Speaking</span>
-                        <span>Memimpin Kelompok</span>
+            <div class="main-col">
+                <div class="glass-card">
+                    <h3>🎓 Pendidikan</h3>
+                    <div class="timeline-item">
+                        <p><strong>SMA KP Baleendah</strong> (2026)</p>
+                        <p><strong>SMP KP Baleendah</strong> (2023)</p>
+                        <p><strong>SDN Riunggunung</strong> (2020)</p>
                     </div>
-                </section>
+                </div>
 
-                <section class="box">
+                <div class="glass-card">
+                    <h3>⚡ Keahlian</h3>
+                    <div class="skill-tags">
+                        <span>Public Speaking</span>
+                        <span>Leadership</span>
+                        <span>Teamwork</span>
+                    </div>
+                </div>
+
+                <div class="glass-card">
                     <h3>🏅 Organisasi</h3>
-                    <p><strong>SD:</strong> Pramuka</p>
-                    <p><strong>SMP:</strong> Pramuka</p>
-                    <p><em>SMA: Tidak mengikuti</em></p>
-                </section>
-            </main>
+                    <p>Pramuka Aktif (SD & SMP)</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        function revealProfile() {
-            const content = document.getElementById('secret-content');
-            const btn = document.getElementById('magic-door-btn');
+        function toggleMagic() {
+            const content = document.getElementById('magic-reveal');
+            content.classList.toggle('active');
             
-            if (content.classList.contains('show')) {
-                content.classList.remove('show');
-                btn.innerHTML = "Buka Pintu Rahasia Hasbi ✨";
-            } else {
-                content.classList.add('show');
-                btn.innerHTML = "Tutup Info Hasbi 🚪";
-            }
+            const btn = document.querySelector('.btn-text');
+            btn.innerText = content.classList.contains('active') ? "Tutup Pintu Ajaib 🚪" : "Buka Pintu Ajaib ✨";
         }
     </script>
 </body>
