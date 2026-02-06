@@ -3,90 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV HASBI - Doraemon Edition</title>
+    <title>CV HASBI - Doraemon Space</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lexend:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="clouds">
-        <div class="cloud"></div>
-        <div class="cloud"></div>
-        <div class="cloud"></div>
+
+    <div class="sky">
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="cloud c3"></div>
     </div>
 
     <div class="container">
-        <header class="hero-card">
-            <div class="dora-icon">
-                <div class="propeller"></div> </div>
-            <h1 class="main-name">HASBI AL MUSYAFA</h1>
-            <p class="status">🚀 Ready for New Adventures!</p>
+        <div class="doraemon-float">
+            <div class="bamboo-copter"></div>
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png" alt="Doraemon">
+        </div>
 
-            <button class="door-btn" onclick="toggleMagic()">
-                <span class="btn-text">Buka Pintu Ajaib ✨</span>
-            </button>
+        <header class="main-card">
+            <div class="header-content">
+                <h1 class="name-title">HASBI AL MUSYAFA</h1>
+                <p class="tagline">Lulusan SMA | Public Speaker | Leader</p>
+                
+                <button class="magic-bell" onclick="openMagicDoor()">
+                    <div class="bell-icon">🔔</div>
+                    <span>Ketuk Pintu Ajaib!</span>
+                </button>
+            </div>
 
-            <div id="magic-reveal" class="reveal-content">
-                <div class="profile-frame">
-                    <img src="https://via.placeholder.com/150/007bff/ffffff?text=HASBI" alt="Hasbi">
-                </div>
-                <div class="speech-bubble">
-                    <h3>Halo! Saya Hasbi</h3>
-                    <p>Lulusan SMA yang aktif, ramah, dan bertanggung jawab. Terbiasa melayani pelanggan dengan disiplin dan kreatif. Saya suka belajar hal baru!</p>
+            <div id="magic-door" class="door-content">
+                <div class="door-inner">
+                    <div class="photo-box">
+                        <img src="WhatsApp Image 2026-02-06 at 7.47.12 PM.jpeg" alt="Foto Hasbi">
+                    </div>
+                    <div class="bio-text">
+                        <h3>Tentang Diri</h3>
+                        <p>Saya lulusan SMA yang aktif, ramah, dan bertanggung jawab. Memiliki pengalaman berjualan sehingga terbiasa melayani pelanggan, berkomunikasi dengan baik, serta bekerja dengan disiplin. Saya suka belajar hal baru dan kreatif.</p>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <div class="info-grid">
-            <div class="side-col">
-                <div class="glass-card">
-                    <h3>📋 Biodata</h3>
-                    <ul>
-                        <li><strong>Lahir:</strong> 11 Nov 2007</li>
-                        <li><strong>Hobi:</strong> Badminton 🏸</li>
-                        <li><strong>Lokasi:</strong> Manggahang 1</li>
+        <div class="grid-container">
+            <aside class="info-sidebar">
+                <div class="card item-hover">
+                    <h3>📍 Informasi</h3>
+                    <p><strong>Lahir:</strong> 11 Nov 2007</p>
+                    <p><strong>WA:</strong> 082130202078</p>
+                    <p><strong>Hobi:</strong> Badminton 🏸</p>
+                    <p><strong>IG:</strong> @benitoite</p>
+                </div>
+                <div class="card item-hover">
+                    <h3>🗣️ Bahasa</h3>
+                    <div class="lang-bar"><span>Indonesia</span> <div class="fill full"></div></div>
+                    <div class="lang-bar"><span>English</span> <div class="fill basic"></div></div>
+                </div>
+            </aside>
+
+            <main class="info-main">
+                <div class="card">
+                    <h3>🎓 Pendidikan</h3>
+                    <ul class="dora-list">
+                        <li><strong>SMA KP Baleendah</strong> (Lulus 2026)</li>
+                        <li><strong>SMP KP Baleendah</strong> (Lulus 2023)</li>
+                        <li><strong>SDN Riunggunung</strong> (Lulus 2020)</li>
                     </ul>
                 </div>
-                <div class="glass-card">
-                    <h3>📱 Kontak</h3>
-                    <p>📞 082130202078</p>
-                    <p>📸 @benitoite</p>
-                </div>
-            </div>
 
-            <div class="main-col">
-                <div class="glass-card">
-                    <h3>🎓 Pendidikan</h3>
-                    <div class="timeline-item">
-                        <p><strong>SMA KP Baleendah</strong> (2026)</p>
-                        <p><strong>SMP KP Baleendah</strong> (2023)</p>
-                        <p><strong>SDN Riunggunung</strong> (2020)</p>
+                <div class="card">
+                    <h3>💡 Keahlian</h3>
+                    <div class="skill-group">
+                        <span class="skill-tag">Public Speaking</span>
+                        <span class="skill-tag">Memimpin Kelompok</span>
                     </div>
                 </div>
 
-                <div class="glass-card">
-                    <h3>⚡ Keahlian</h3>
-                    <div class="skill-tags">
-                        <span>Public Speaking</span>
-                        <span>Leadership</span>
-                        <span>Teamwork</span>
-                    </div>
-                </div>
-
-                <div class="glass-card">
+                <div class="card">
                     <h3>🏅 Organisasi</h3>
-                    <p>Pramuka Aktif (SD & SMP)</p>
+                    <p><strong>Pramuka (SD & SMP):</strong> Aktif berorganisasi dan melatih kedisiplinan sejak dini.</p>
                 </div>
-            </div>
+            </main>
         </div>
     </div>
 
     <script>
-        function toggleMagic() {
-            const content = document.getElementById('magic-reveal');
-            content.classList.toggle('active');
+        function openMagicDoor() {
+            const door = document.getElementById('magic-door');
+            door.classList.toggle('active');
             
-            const btn = document.querySelector('.btn-text');
-            btn.innerText = content.classList.contains('active') ? "Tutup Pintu Ajaib 🚪" : "Buka Pintu Ajaib ✨";
+            // Efek suara ketukan jika ingin ditambah sendiri
+            if(door.classList.contains('active')) {
+                console.log("Pintu Terbuka!");
+            }
         }
     </script>
 </body>
