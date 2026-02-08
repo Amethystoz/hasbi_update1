@@ -3,96 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Hasbi - Doraemon Theme</title>
+    <title>Curriculum Vitae - Batman Edition</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
+        <div class="bat-logo-bg"></div>
+
         <header>
-            <div class="bell-icon">🔔</div>
-            <h1>HASBI AL MUSYAFA</h1>
-            <p class="tagline">Lulusan SMA yang Kreatif & Disiplin</p>
+            <div class="profile-frame">
+                <img src="WhatsApp Image 2026-02-06 at 7.47.12 PM.jpeg" alt="Foto Diri" class="profile-img">
+            </div>
+            <div class="header-text">
+                <h1 class="glow-text">HASBI AL MUSYAFA</h1>
+                <p class="tagline">Tahun Lahir: 2007 NOV 11 | Gotham City</p>
+            </div>
         </header>
 
-        <div class="photo-section">
-            <button id="magicBtn">Buka Kantong Ajaib (Lihat Foto)</button>
-            <div id="photoWrapper" class="hidden">
-                <img src="WhatsApp Image 2026-02-06 at 7.47.12 PM.jpeg" alt="Foto Hasbi" class="profile-img">
-                <p>✨ Tadaaa! ✨</p>
-            </div>
-        </div>
-
         <main>
-            <section class="card">
-                <h3>🔵 Tentang Diri</h3>
-                <p>Saya lulusan SMA yang aktif, ramah, dan bertanggung jawab. Memiliki pengalaman berjualan kecil-kecilan sehingga terbiasa melayani pelanggan, berkomunikasi dengan baik, serta bekerja dengan disiplin. Saya suka belajar hal baru dan kreatif.</p>
+            <section class="card about">
+                <h3>TENTANG SAYA</h3>
+                <p>Seorang profesional yang berdedikasi tinggi dengan visi membawa perubahan. Memiliki disiplin luar biasa dan kemampuan adaptasi di lingkungan yang paling gelap sekalipun.</p>
             </section>
 
-            <section class="card">
-                <h3>🔴 Detail Kontak</h3>
+            <div class="grid-container">
+                <section class="card contact">
+                    <h3>KONTAK</h3>
+                    <ul>
+                        <li><strong>Telp:</strong> 0821-3020-2078</li>
+                        <li><strong>Alamat:</strong> Baleendah, Manggahang 1</li>
+                        <li><strong>Instagram:</strong> @benitoite</li>
+                    </ul>
+                </section>
+
+                <section class="card skills">
+                    <h3>BAHASA</h3>
+                    <div class="skill-bar">
+                        <span>Indonesia (Native)</span>
+                        <div class="progress"><div class="fill" style="width: 100%;"></div></div>
+                    </div>
+                    <div class="skill-bar">
+                        <span>Inggris (Basic)</span>
+                        <div class="progress"><div class="fill" style="width: 40%;"></div></div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="card education">
+                <h3>PENDIDIKAN</h3>
                 <ul>
-                    <li><strong>Lahir:</strong> 11 November 2007</li>
-                    <li><strong>Telepon:</strong> 082130202078</li>
-                    <li><strong>Hobby:</strong> 🏸 Badminton</li>
-                    <li><strong>Alamat:</strong> Kp. Manggahang 1</li>
-                    <li><strong>IG:</strong> @benitoite</li>
+                    <li><strong>SD Riunggunung</strong> (Lulus 2020)</li>
+                    <li><strong>SMP Karya Pembangunan</strong> (Lulus 2023)</li>
+                    <li><strong>SMA Karya Pembangunan</strong> (Lulus 2026)</li>
                 </ul>
             </section>
 
-            <section class="card">
-                <h3>🟡 Pendidikan</h3>
-                <div class="timeline">
-                    <div class="item">
-                        <p><strong>SMA KARYA PEMBANGUNAN BALEENDAH</strong></p>
-                        <span>Lulus Tahun 2026</span>
-                    </div>
-                    <div class="item">
-                        <p><strong>SMP KARYA PEMBANGUNAN BALEENDAH</strong></p>
-                        <span>Lulus Tahun 2023</span>
-                    </div>
-                    <div class="item">
-                        <p><strong>SDN RIUNGGUNUNG</strong></p>
-                        <span>Lulus Tahun 2020</span>
-                    </div>
-                </div>
+            <section class="card experience">
+                <h3>PENGALAMAN ORGANISASI</h3>
+                <ul>
+                    <li>Pramuka (SD) (2017-2020)</li>
+                    <li>Pramuka (SMP) (2021))</li>
+                </ul>
             </section>
 
-            <div class="grid-2">
-                <section class="card">
-                    <h3>🔵 Keahlian</h3>
-                    <ul>
-                        <li>Public Speaking</li>
-                        <li>Memimpin Kelompok</li>
-                        <li>Bahasa Indonesia (Native)</li>
-                        <li>English (Basic)</li>
-                    </ul>
-                </section>
-                <section class="card">
-                    <h3>🔴 Organisasi</h3>
-                    <ul>
-                        <li><strong>SD:</strong> Pramuka</li>
-                        <li><strong>SMP:</strong> Pramuka</li>
-                        <li><strong>SMA:</strong> Fokus Studi</li>
-                    </ul>
-                </section>
-            </div>
-        </main>
+            <section class="card hobbies">
+                <h3>HOBBY</h3>
+                <p>Badminton, Bersepeda, Bermain Game.</p>
+            </section>
 
-        <footer>
-            <p>Dibuat dengan semangat Baling-Baling Bambu 🎋</p>
-        </footer>
+            <section class="card certs">
+                <h3>SERTIFIKAT</h3>
+                <p>Juara 1 Balap Karung.</p>
+            </section>
+        </main>
     </div>
 
-    <script>
-        const btn = document.getElementById('magicBtn');
-        const photo = document.getElementById('photoWrapper');
-
-        btn.addEventListener('click', () => {
-            photo.classList.toggle('show');
-            btn.innerText = photo.classList.contains('show') ? 'Tutup Kantong' : 'Buka Kantong Ajaib (Lihat Foto)';
-        });
-    </script>
 </body>
 </html>

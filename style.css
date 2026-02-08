@@ -1,136 +1,143 @@
 :root {
-    --dora-blue: #00A0E9;
-    --dora-red: #EE1C24;
-    --dora-yellow: #FFEF00;
-    --dora-white: #FFFFFF;
+    --bat-black: #1a1a1a;
+    --bat-gold: #ffcf00;
+    --bat-gray: #333;
+    --text-light: #e0e0e0;
 }
 
 body {
-    background-color: #e0f4ff;
-    font-family: 'Quicksand', sans-serif;
-    color: #333;
+    background-color: #0b0b0b;
+    color: var(--text-light);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
-    padding: 20px;
 }
 
 .container {
-    max-width: 700px;
-    background: var(--dora-white);
-    border-radius: 30px;
-    border: 8px solid var(--dora-blue);
+    width: 100%;
+    max-width: 800px;
+    background: linear-gradient(145deg, #1f1f1f, #111);
+    padding: 40px;
+    border-left: 5px solid var(--bat-gold);
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
 }
 
-/* Header */
+/* Background Logo Batman */
+.bat-logo-bg {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    width: 300px;
+    height: 150px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/c/c5/Batman_Logo.svg') no-repeat;
+    opacity: 0.05;
+    filter: grayscale(1);
+    z-index: 0;
+}
+
+/* Hover Effects Utama */
+.card, .profile-frame, .header-text h1 {
+    transition: all 0.3s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateX(10px);
+    border-left: 3px solid var(--bat-gold);
+    background: rgba(255, 207, 0, 0.05);
+}
+
+/* Header & Foto */
 header {
-    background-color: var(--dora-blue);
-    color: white;
-    text-align: center;
-    padding: 30px 10px;
-    border-bottom: 5px solid var(--dora-red);
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
 }
 
-header h1 {
-    font-family: 'Fredoka One', cursive;
-    margin: 10px 0;
-    letter-spacing: 2px;
-}
-
-.bell-icon {
-    font-size: 40px;
-    background: var(--dora-yellow);
-    display: inline-block;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    border: 3px solid #333;
-}
-
-/* Photo Section & Animation */
-.photo-section {
-    text-align: center;
-    padding: 20px;
-}
-
-#magicBtn {
-    background: var(--dora-red);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: transform 0.2s, background 0.3s;
-    font-family: 'Quicksand', sans-serif;
-}
-
-#magicBtn:hover {
-    transform: scale(1.1) rotate(-2deg);
-    background: #c7151a;
-}
-
-#magicBtn:active {
-    transform: scale(0.9);
-}
-
-.hidden {
-    max-height: 0;
-    opacity: 0;
+.profile-frame {
+    width: 150px;
+    height: 150px;
+    border: 3px solid var(--bat-gray);
     overflow: hidden;
-    transition: all 0.6s ease-in-out;
+    border-radius: 10% 25%; /* Potongan asimetris ala Batman */
 }
 
-.show {
-    max-height: 300px;
-    opacity: 1;
-    margin-top: 20px;
+.profile-frame:hover {
+    border-color: var(--bat-gold);
+    box-shadow: 0 0 20px var(--bat-gold);
+    transform: scale(1.05);
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid var(--dora-blue);
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-/* Cards */
+.glow-text {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+}
+
+.glow-text:hover {
+    color: var(--bat-gold);
+    text-shadow: 0 0 10px var(--bat-gold);
+    cursor: default;
+}
+
+/* Grid & List */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
 .card {
-    padding: 15px 25px;
-    margin: 15px;
-    border-radius: 15px;
-    background: #f9f9f9;
-    border-left: 8px solid var(--dora-blue);
+    background: rgba(255,255,255,0.03);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
 }
 
 h3 {
+    color: var(--bat-gold);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
     margin-top: 0;
-    color: var(--dora-blue);
-}
-
-.grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.timeline .item {
-    margin-bottom: 10px;
+    border-bottom: 1px solid var(--bat-gray);
     padding-bottom: 5px;
-    border-bottom: 1px dashed #ccc;
 }
 
-footer {
-    text-align: center;
-    font-size: 0.8em;
-    padding: 15px;
-    background: #eee;
-    color: #777;
+ul {
+    padding-left: 18px;
+    list-style: square;
+}
+
+ul li { margin-bottom: 8px; }
+
+/* Bahasa Bar */
+.skill-bar { margin-bottom: 15px; }
+.progress {
+    background: #444;
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+.fill {
+    background: var(--bat-gold);
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 10px var(--bat-gold);
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-    .grid-2 { grid-template-columns: 1fr; }
+    .grid-container { grid-template-columns: 1fr; }
+    header { flex-direction: column; text-align: center; }
 }
