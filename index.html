@@ -3,77 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Batman - Hasbi Al-Musyafa</title>
+    <title>The Dark Knight CV - Hasbi Al-Musyafa</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400;700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="bg-overlay"></div>
+
     <div class="container">
-        <div class="bat-logo">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 2c-.8 0-1.5.5-1.8 1.2-.2.6-.5.8-1.2.8s-1.4-.2-2-.8c-.3-.3-.7-.5-1-.5-1.1 0-2 1-2 2.2 0 .5.2.9.5 1.2.6.6.8 1.3.8 2s-.2 1.4-.8 2c-.3.3-.5.7-.5 1.1 0 1.2.9 2.2 2 2.2.4 0 .8-.1 1-.4.6-.6 1.3-.8 2-.8s1.4.2 2 .8c.3.3.6.5 1 .5s.7-.2 1-.5c.6-.6 1.3-.8 2-.8s1.4.2 2 .8c.3.3.7.4 1 .4 1.1 0 2-1 2-2.2 0-.4-.2-.8-.5-1.1-.6-.6-.8-1.3-.8-2s.2-1.4.8-2c.3-.3.5-.7.5-1.2 0-1.2-.9-2.2-2-2.2-.3 0-.7.2-1 .5-.6.6-1.3.8-2 .8s-1-.2-1.2-.8c-.3-.7-1-1.2-1.8-1.2z"/>
+        <div class="batman-header">
+            <svg class="bat-icon" viewBox="0 0 400 160">
+                <path d="M200,30c-15,0-30,10-40,25c-5-10-15-15-25-15s-20,5-25,15c-10-15-25-25-40-25c-40,0-70,40-70,80c0,30,25,50,55,50c15,0,30-5,40-15c5,10,15,15,25,15s20-5,25-15c10,15,25,25,40,25s30-10,40-25c5,10,15,15,25,15s20-5,25-15c10,15,25,25,40,25c30,0,55-20,55-50C310,70,280,30,240,30c-15,0-30,10-40,25C195,45,185,40,175,40S165,45,160,55C150,40,135,30,120,30H200z" />
             </svg>
-            <p class="hero-name">I AM BATMAN</p>
+            <h1 class="glitch-text" data-text="HASBI AL-MUSYAFA">HASBI AL-MUSYAFA</h1>
+            <p class="hero-tagline">"I'm whatever Gotham needs me to be."</p>
         </div>
 
-        <header class="header-section">
-            <div class="photo-frame">
+        <header class="main-profile">
+            <div class="photo-wrapper">
+                <div class="glow-ring"></div>
                 <img src="WhatsApp Image 2026-02-08 at 5.02.17 PM.jpeg" alt="Hasbi Al-Musyafa" class="profile-img">
             </div>
-            <h1 class="glitch">Hasbi Al-Musyafa</h1>
-            <p class="sub-text">SMA Jurusan IPS | Pemimpin Kelompok</p>
+            <div class="quick-info">
+                <p><strong>Status:</strong> Student / Future Leader</p>
+                <p><strong>Location:</strong> Baleendah, Kp. Manggahang</p>
+            </div>
         </header>
 
-        <section class="card hover-effect">
-            <h2>🛡️ Tentang Diri</h2>
-            <p>Saya seorang siswa SMA jurusan IPS yang bisa diandalkan untuk menjadi pemimpin dalam suatu kelompok dan saya juga sangat baik dalam beradaptasi di lingkungan baru dengan cepat.</p>
+        <section class="glass-card full-width">
+            <h2 class="section-title"><span class="icon">🦇</span> Mission Objective</h2>
+            <p>Saya seorang siswa SMA jurusan IPS yang bisa diandalkan untuk menjadi pemimpin dalam suatu kelompok dan saya juga sangat baik dalam beradaptasi dilingkungan baru dengan cepat.</p>
         </section>
 
-        <div class="grid-2">
-            <section class="card hover-effect">
-                <h2>🦇 Identitas</h2>
-                <ul>
-                    <li><strong>Lahir:</strong> 11 November 2007</li>
-                    <li><strong>HP:</strong> 082130202078</li>
-                    <li><strong>Alamat:</strong> Baleendah, Kp. Manggahang</li>
-                    <li><strong>Instagram:</strong> @benitoite</li>
+        <div class="info-grid">
+            <section class="glass-card">
+                <h2 class="section-title">Secret Identity</h2>
+                <div class="data-item"><span>Born:</span> 11 Nov 2007</div>
+                <div class="data-item"><span>Phone:</span> 082130202078</div>
+                <div class="data-item"><span>IG:</span> @benitoite</div>
+            </section>
+
+            <section class="glass-card">
+                <h2 class="section-title">Activities</h2>
+                <div class="hobby-tags">
+                    <span class="tag">🚴 Bersepeda</span>
+                    <span class="tag">🏸 Badminton</span>
+                </div>
+            </section>
+        </div>
+
+        <section class="glass-card full-width">
+            <h2 class="section-title">Education Records</h2>
+            <div class="timeline">
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <p><strong>SDN Riung Gunung</strong> | 2015 - 2020</p>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <p><strong>SMP Karya Pembangunan</strong> | 2020 - 2023</p>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-dot"></div>
+                    <p><strong>SMA Karya Pembangunan</strong> | 2024 - 2026</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="info-grid">
+            <section class="glass-card">
+                <h2 class="section-title">Utility Belt (Skills)</h2>
+                <ul class="skill-list">
+                    <li>Basic Coding</li>
+                    <li>Joki Tugas Specialist</li>
+                    <li>Leadership</li>
                 </ul>
             </section>
 
-            <section class="card hover-effect">
-                <h2>🚴 Hobby</h2>
-                <p>Bersepeda, Badminton</p>
+            <section class="glass-card">
+                <h2 class="section-title">Linguistics</h2>
+                <p>Bahasa Indonesia (Native)</p>
+                <p>Basic English (Working Knowledge)</p>
             </section>
         </div>
 
-        <section class="card hover-effect">
-            <h2>🎓 Pendidikan</h2>
-            <div class="timeline">
-                <p><strong>SDN Riung Gunung</strong> (2015 - 2020)</p>
-                <p><strong>SMP Karya Pembangunan</strong> (2020 - 2023)</p>
-                <p><strong>SMA Karya Pembangunan</strong> (2024 - 2026)</p>
+        <section class="glass-card full-width">
+            <h2 class="section-title">Justice League Experience</h2>
+            <div class="org-item">
+                <h3>Danton Pramuka (SD)</h3>
+                <p>Memimpin barisan dengan disiplin tinggi.</p>
             </div>
-        </section>
-
-        <div class="grid-2">
-            <section class="card hover-effect">
-                <h2>💻 Keahlian</h2>
-                <p>Basic Coding, Joki Tugas</p>
-            </section>
-            <section class="card hover-effect">
-                <h2>🗣️ Bahasa</h2>
-                <p>Indonesia & Basic Inggris</p>
-            </section>
-        </div>
-
-        <section class="card hover-effect">
-            <h2>🎖️ Pengalaman Organisasi</h2>
-            <ul>
-                <li>Danton Pramuka (SD)</li>
-                <li>Anggota Pramuka (SMP)</li>
-                <li>SMA: Fokus Studi & Pelatihan Mandiri</li>
-            </ul>
+            <div class="org-item">
+                <h3>Anggota Pramuka (SMP)</h3>
+                <p>Aktif dalam kegiatan lapangan dan kerjasama tim.</p>
+            </div>
         </section>
     </div>
 
